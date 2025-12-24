@@ -1,4 +1,205 @@
-<script>
-document.write(unescape('%3C%21DOCTYPE%20html%3E%0A%3Chtml%20lang%3D%22vi%22%3E%0A%0A%3Chead%3E%0A%20%20%20%20%3Cmeta%20charset%3D%22UTF-8%22%3E%0A%20%20%20%20%3Cmeta%20name%3D%22viewport%22%20content%3D%22width%3Ddevice-width%2C%20initial-scale%3D1.0%22%3E%0A%20%20%20%20%3Ctitle%3ECulinary%20Design%202%3C/title%3E%0A%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20%20%20*%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20margin%3A%200%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20padding%3A%200%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20box-sizing%3A%20border-box%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20body%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20font-family%3A%20Arial%2C%20sans-serif%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20background%3A%20%23f9f5f0%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20min-height%3A%20100vh%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20flex-direction%3A%20column%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20header%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background%3A%20%231e1e1e%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20color%3A%20white%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20padding%3A%2030px%2040px%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20justify-content%3A%20space-between%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20align-items%3A%20center%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20header%20h1%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20font-size%3A%2032px%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20color%3A%20%23d4af37%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20nav%20ul%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20list-style%3A%20none%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20gap%3A%2040px%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20nav%20a%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20color%3A%20%23ddd%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20text-decoration%3A%20none%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20font-weight%3A%20bold%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20font-size%3A%2018px%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20nav%20a%3Ahover%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20color%3A%20%23d4af37%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20.content%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20flex%3A%201%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20max-width%3A%202000px%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20margin%3A%2060px%20auto%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20padding%3A%200%2040px%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20flex-wrap%3A%20wrap%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20gap%3A%2050px%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20justify-content%3A%20center%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20.section%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20flex%3A%201%201%20350px%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20/*%20Card%20l%u1EDBn%20h%u01A1n%20%u0111%u1EC3%20chi%u1EBFm%20kh%F4ng%20gian%20*/%0A%20%20%20%20%20%20%20%20%20%20%20%20background%3A%20white%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20padding%3A%2040px%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20border-radius%3A%2015px%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20box-shadow%3A%200%208px%2030px%20rgba%280%2C%200%2C%200%2C%200.15%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20height%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20/*%20%u0110%u1EA3m%20b%u1EA3o%20c%E1c%20ph%u1EA7n%20t%u1EED%20c%F3%20c%F9ng%20chi%u1EC1u%20cao%20*/%0A%20%20%20%20%20%20%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20flex-direction%3A%20column%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20justify-content%3A%20space-between%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20/*%20%u0110%u1EA3m%20b%u1EA3o%20n%u1ED9i%20dung%20b%EAn%20trong%20%u0111%u01B0%u1EE3c%20ph%E2n%20b%u1ED5%20%u0111%u1EC1u%20*/%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20.section%20h2%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20font-size%3A%2028px%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20margin-bottom%3A%2025px%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20color%3A%20%23d4af37%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20.section%20p%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20font-size%3A%2018px%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20line-height%3A%201.6%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20margin-bottom%3A%2030px%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20color%3A%20%23555%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20flex-grow%3A%201%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20font-weight%3A%20bold%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20/*%20L%E0m%20cho%20%u0111o%u1EA1n%20v%u0103n%20b%u1EA3n%20c%F3%20th%u1EC3%20m%u1EDF%20r%u1ED9ng%20n%u1EBFu%20c%u1EA7n%20thi%u1EBFt%20*/%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20.section%20img%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20width%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20height%3A%20300px%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20/*%20Gi%u1EA3m%20chi%u1EC1u%20cao%20%u1EA3nh%20%u0111%u1EC3%20c%E1c%20ph%u1EA7n%20t%u1EED%20c%F3%20c%F9ng%20chi%u1EC1u%20cao%20*/%0A%20%20%20%20%20%20%20%20%20%20%20%20object-fit%3A%20cover%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20border-radius%3A%2015px%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20footer%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20background%3A%20%231e1e1e%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20color%3A%20%23ddd%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20padding%3A%2030px%2040px%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20justify-content%3A%20space-between%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20align-items%3A%20center%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20margin-top%3A%20auto%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20/*%20%u0110%u1EA9y%20footer%20xu%u1ED1ng%20%u0111%E1y%20n%u1EBFu%20n%u1ED9i%20dung%20ng%u1EAFn%20*/%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20footer%20a%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20color%3A%20%23ddd%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20text-decoration%3A%20none%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20margin-left%3A%2020px%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20font-size%3A%2016px%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20footer%20a%3Ahover%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20color%3A%20%23d4af37%3B%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%3C/style%3E%0A%3C/head%3E%0A%0A%3Cbody%3E%0A%0A%20%20%20%20%3Cheader%3E%0A%20%20%20%20%20%20%20%20%3Ch1%3EFood%20Blog%3C/h1%3E%0A%20%20%20%20%20%20%20%20%3Cnav%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cul%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3E%3Ca%20href%3D%22%23%22%3EHome%3C/a%3E%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3E%3Ca%20href%3D%22%23%22%3ERecipes%3C/a%3E%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3E%3Ca%20href%3D%22%23%22%3EMenu%3C/a%3E%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3E%3Ca%20href%3D%22%23%22%3EContact%3C/a%3E%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/ul%3E%0A%20%20%20%20%20%20%20%20%3C/nav%3E%0A%20%20%20%20%3C/header%3E%0A%0A%20%20%20%20%3Cdiv%20class%3D%22content%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22section%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ch2%3EM%F3n%20Khai%20V%u1ECB%3C/h2%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3EAppetizer%20%28m%F3n%20khai%20v%u1ECB%29%20l%E0%20m%F3n%20%u0103n%20ho%u1EB7c%20%u0111%u1ED3%20u%u1ED1ng%20nh%u1ECF%2C%20nh%u1EB9%20nh%E0ng%20ph%u1EE5c%20v%u1EE5%20tr%u01B0%u1EDBc%20b%u1EEFa%20ch%EDnh%20nh%u1EB1m%20k%EDch%20th%EDch%20v%u1ECB%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20gi%E1c%2C%20%22%u0111%E1nh%20th%u1EE9c%22%20s%u1EF1%20th%E8m%20%u0103n%20cho%20c%E1c%20m%F3n%20ti%u1EBFp%20theo%20trong%20b%u1EEFa%20ti%u1EC7c.%20Ch%FAng%20c%F3%20th%u1EC3%20n%F3ng%20ho%u1EB7c%20l%u1EA1nh%2C%20kh%u1EA9u%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20ph%u1EA7n%20nh%u1ECF%2C%20v%E0%20c%F3%20%u1EDF%20nhi%u1EC1u%20n%u1EC1n%20%u1EA9m%20th%u1EF1c%20kh%E1c%20nhau%20%28nh%u01B0%20g%u1ECFi%2C%20nem%20%u1EDF%20Vi%u1EC7t%20Nam%2C%20ho%u1EB7c%20ph%F4%20mai%2C%20b%E1nh%20quy%20%u1EDF%20ph%u01B0%u01A1ng%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20T%E2y%29%2C%20gi%FAp%20m%u1EDF%20%u0111%u1EA7u%20b%u1EEFa%20%u0103n%20m%u1ED9t%20c%E1ch%20h%u1EA5p%20d%u1EABn.%20M%F3n%20khai%20v%u1ECB%20mang%20%u0111%u1EBFn%20nh%u1EEFng%20tr%u1EA3i%20nghi%u1EC7m%20th%FA%20v%u1ECB%20gi%FAp%20th%u1EF1c%20kh%E1ch%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20c%u1EA3m%20nh%u1EADn%20%u0111%u01B0%u1EE3c%20s%u1EF1%20%u0111%u1EB7c%20bi%u1EC7t%20c%u1EE7a%20b%u1EEFa%20ti%u1EC7c%20ngay%20t%u1EEB%20%u0111%u1EA7u.%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22https%3A//celebrationsathomeblog.com/wp-content/uploads/2018/10/apple-appetizers-with-cheese.jpg%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20alt%3D%22M%F3n%20khai%20v%u1ECB%22%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22section%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ch2%3EM%F3n%20Ch%EDnh%3C/h2%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3EMain%20course%20%28m%F3n%20ch%EDnh%29%20l%E0%20ph%u1EA7n%20quan%20tr%u1ECDng%20nh%u1EA5t%2C%20th%u1ECBnh%20so%u1EA1n%20nh%u1EA5t%20trong%20m%u1ED9t%20b%u1EEFa%20%u0103n%20nhi%u1EC1u%20m%F3n%2C%20th%u01B0%u1EDDng%20%u0111%u01B0%u1EE3c%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20ph%u1EE5c%20v%u1EE5%20sau%20m%F3n%20khai%20v%u1ECB%20%28nh%u01B0%20s%FAp%2C%20g%u1ECFi%2C%20salad%29%20v%E0%20tr%u01B0%u1EDBc%20m%F3n%20tr%E1ng%20mi%u1EC7ng.%20M%F3n%20ch%EDnh%20cung%20c%u1EA5p%20dinh%20d%u01B0%u1EE1ng%20v%E0%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20n%u0103ng%20l%u01B0%u1EE3ng%20ch%EDnh%2C%20th%u01B0%u1EDDng%20t%u1EADp%20trung%20v%E0o%20th%u1ECBt%2C%20c%E1%20ho%u1EB7c%20h%u1EA3i%20s%u1EA3n%20%u0111%u01B0%u1EE3c%20ch%u1EBF%20bi%u1EBFn%20%u0111a%20d%u1EA1ng%20nh%u01B0%20n%u01B0%u1EDBng%2C%20x%E0o%2C%20kho%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20h%u1EA5p.%20T%F9y%20theo%20phong%20c%E1ch%20%u1EA9m%20th%u1EF1c%20M%F3n%20ch%EDnh%20kh%F4ng%20ch%u1EC9%20mang%20%u0111%u1EBFn%20s%u1EF1%20phong%20ph%FA%20v%u1EC1%20h%u01B0%u01A1ng%20v%u1ECB%20m%E0%20c%F2n%20gi%FAp%20th%u1EF1c%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20kh%E1ch%20c%u1EA3m%20nh%u1EADn%20%u0111%u01B0%u1EE3c%20s%u1EF1%20tinh%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20t%u1EBF%20trong%20%u1EA9m%20th%u1EF1c.%20%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22https%3A//ezcloud.vn/wp-content/uploads/2024/02/main-course-la-gi.webp%22%20alt%3D%22M%F3n%20ch%EDnh%22%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22section%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ch2%3EM%F3n%20Tr%E1ng%20Mi%u1EC7ng%3C/h2%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3EM%F3n%20tr%E1ng%20mi%u1EC7ng%20l%E0%20m%F3n%20%u0103n%20ng%u1ECDt%20ho%u1EB7c%20m%F3n%20nh%u1EB9%20%u0111%u01B0%u1EE3c%20d%F9ng%20sau%20b%u1EEFa%20%u0103n%20ch%EDnh%2C%20nh%u1EB1m%20k%u1EBFt%20th%FAc%20b%u1EEFa%20%u0103n%20m%u1ED9t%20c%E1ch%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20tr%u1ECDn%20v%u1EB9n%2C%20l%E0m%20s%u1EA1ch%20v%u1ECB%20gi%E1c%2C%20v%E0%20th%u01B0%u1EDDng%20bao%20g%u1ED3m%20c%E1c%20lo%u1EA1i%20b%E1nh%2C%20kem%2C%20tr%E1i%20c%E2y%2C%20s%F4%20c%F4%20la%2C%20ch%E8%2C%20ho%u1EB7c%20s%u1EEFa%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20chua.%20M%F3n%20tr%E1ng%20mi%u1EC7ng%20kh%F4ng%20ch%u1EC9%20gi%FAp%20l%E0m%20d%u1ECBu%20%u0111i%20v%u1ECB%20gi%E1c%20m%E0%20c%F2n%20mang%20%u0111%u1EBFn%20s%u1EF1%20h%E0i%20l%F2ng%20cho%20th%u1EF1c%20kh%E1ch%2C%20kh%E9p%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20l%u1EA1i%20b%u1EEFa%20%u0103n%20trong%20m%u1ED9t%20c%u1EA3m%20gi%E1c%20ngon%20mi%u1EC7ng%20v%E0%20tho%u1EA3i%20m%E1i.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20V%u1ECB%20ng%u1ECDt%20c%u1EE7a%20m%F3n%20tr%E1ng%20mi%u1EC7ng%20k%EDch%20ho%u1EA1t%20gi%u1EA3i%20ph%F3ng%20endorphin%20trong%20n%E3o%2C%20t%u1EA1o%20c%u1EA3m%20gi%E1c%20h%u1EA1nh%20ph%FAc%20v%E0%20th%u01B0%20gi%E3n%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20sau%20b%u1EEFa%20%u0103n.%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22https%3A//images.unsplash.com/photo-1563729784474-d77dbb933a9e%3Fixlib%3Drb-4.0.3%26auto%3Dformat%26fit%3Dcrop%26w%3D1000%26q%3D80%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20alt%3D%22M%F3n%20tr%E1ng%20mi%u1EC7ng%22%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%3C/div%3E%0A%0A%0A%20%20%20%20%3Cfooter%3E%0A%20%20%20%20%20%20%20%20%3Cp%3E%A9%202025%20Food%20Blog.%20All%20rights%20reserved.%3C/p%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%23%22%3EPrivacy%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%23%22%3ETerms%3C/a%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%3C/footer%3E%0A%0A%20%20%20%20%3Cscript%3E%0A%20%20%20%20%20%20%20%20document.addEventListener%28%22keydown%22%2C%20function%20%28event%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20if%20%28event.key%20%3D%3D%3D%20%22F12%22%20%7C%7C%20event.ctrlKey%20%26%26%20event.shiftKey%20%26%26%20event.key%20%3D%3D%3D%20%22I%22%20%7C%7C%20event.ctrlKey%20%26%26%20event.shiftKey%20%26%26%20event.key%20%3D%3D%3D%20%22C%22%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20event.preventDefault%28%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20alert%28%22Inspect%20Element%20v%E0%20F12%20b%u1ECB%20v%F4%20hi%u1EC7u%20h%F3a%21%22%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%29%3B%0A%0A%20%20%20%20%20%20%20%20document.addEventListener%28%22contextmenu%22%2C%20function%20%28event%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20event.preventDefault%28%29%3B%20//%20Ng%u1EEBng%20menu%20chu%u1ED9t%20ph%u1EA3i%0A%20%20%20%20%20%20%20%20%20%20%20%20alert%28%22Chu%u1ED9t%20ph%u1EA3i%20%u0111%E3%20b%u1ECB%20v%F4%20hi%u1EC7u%20h%F3a%21%22%29%3B%0A%20%20%20%20%20%20%20%20%7D%29%3B%0A%0A%20%20%20%20%3C/script%3E%0A%0A%3C/body%3E%0A%0A%3C/html%3E'));
-</script>
+<!DOCTYPE html>
+<html lang="vi">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culinary Design 2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f9f5f0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background: #1e1e1e;
+            color: white;
+            padding: 30px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 32px;
+            color: #d4af37;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 40px;
+        }
+
+        nav a {
+            color: #ddd;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: #d4af37;
+        }
+
+        .content {
+            flex: 1;
+            max-width: 2000px;
+            margin: 60px auto;
+            padding: 0 40px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+            justify-content: center;
+        }
+
+        .section {
+            flex: 1 1 350px;
+            /* Card lớn hơn để chiếm không gian */
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+            height: 100%;
+            /* Đảm bảo các phần tử có cùng chiều cao */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            /* Đảm bảo nội dung bên trong được phân bổ đều */
+        }
+
+        .section h2 {
+            font-size: 28px;
+            margin-bottom: 25px;
+            color: #d4af37;
+        }
+
+        .section p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #555;
+            flex-grow: 1;
+            font-weight: bold;
+            /* Làm cho đoạn văn bản có thể mở rộng nếu cần thiết */
+        }
+
+        .section img {
+            width: 100%;
+            height: 300px;
+            /* Giảm chiều cao ảnh để các phần tử có cùng chiều cao */
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        footer {
+            background: #1e1e1e;
+            color: #ddd;
+            padding: 30px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: auto;
+            /* Đẩy footer xuống đáy nếu nội dung ngắn */
+        }
+
+        footer a {
+            color: #ddd;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 16px;
+        }
+
+        footer a:hover {
+            color: #d4af37;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Food Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Recipes</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        <div class="section">
+            <h2>Món Khai Vị</h2>
+            <p>Appetizer (món khai vị) là món ăn hoặc đồ uống nhỏ, nhẹ nhàng phục vụ trước bữa chính nhằm kích thích vị
+                giác, "đánh thức" sự thèm ăn cho các món tiếp theo trong bữa tiệc. Chúng có thể nóng hoặc lạnh, khẩu
+                phần nhỏ, và có ở nhiều nền ẩm thực khác nhau (như gỏi, nem ở Việt Nam, hoặc phô mai, bánh quy ở phương
+                Tây), giúp mở đầu bữa ăn một cách hấp dẫn. Món khai vị mang đến những trải nghiệm thú vị giúp thực khách
+                cảm nhận được sự đặc biệt của bữa tiệc ngay từ đầu.</p>
+            <img src="https://celebrationsathomeblog.com/wp-content/uploads/2018/10/apple-appetizers-with-cheese.jpg"
+                alt="Món khai vị">
+        </div>
+
+        <div class="section">
+            <h2>Món Chính</h2>
+            <p>Main course (món chính) là phần quan trọng nhất, thịnh soạn nhất trong một bữa ăn nhiều món, thường được
+                phục vụ sau món khai vị (như súp, gỏi, salad) và trước món tráng miệng. Món chính cung cấp dinh dưỡng và
+                năng lượng chính, thường tập trung vào thịt, cá hoặc hải sản được chế biến đa dạng như nướng, xào, kho,
+                hấp. Tùy theo phong cách ẩm thực Món chính không chỉ mang đến sự phong phú về hương vị mà còn giúp thực
+                khách cảm nhận được sự tinh
+                tế trong ẩm thực. </p>
+            <img src="https://ezcloud.vn/wp-content/uploads/2024/02/main-course-la-gi.webp" alt="Món chính">
+        </div>
+
+        <div class="section">
+            <h2>Món Tráng Miệng</h2>
+            <p>Món tráng miệng là món ăn ngọt hoặc món nhẹ được dùng sau bữa ăn chính, nhằm kết thúc bữa ăn một cách
+                trọn vẹn, làm sạch vị giác, và thường bao gồm các loại bánh, kem, trái cây, sô cô la, chè, hoặc sữa
+                chua. Món tráng miệng không chỉ giúp làm dịu đi vị giác mà còn mang đến sự hài lòng cho thực khách, khép
+                lại bữa ăn trong một cảm giác ngon miệng và thoải mái.
+                Vị ngọt của món tráng miệng kích hoạt giải phóng endorphin trong não, tạo cảm giác hạnh phúc và thư giãn
+                sau bữa ăn.
+            </p>
+            <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                alt="Món tráng miệng">
+        </div>
+    </div>
+
+
+    <footer>
+        <p>© 2025 Food Blog. All rights reserved.</p>
+        <div>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("keydown", function (event) {
+            if (event.key === "F12" || event.ctrlKey && event.shiftKey && event.key === "I" || event.ctrlKey && event.shiftKey && event.key === "C") {
+                event.preventDefault();
+                alert("Inspect Element và F12 bị vô hiệu hóa!");
+            }
+        });
+
+        document.addEventListener("contextmenu", function (event) {
+            event.preventDefault(); // Ngừng menu chuột phải
+            alert("Chuột phải đã bị vô hiệu hóa!");
+        });
+
+    </script>
+
+</body>
+
+</html>
