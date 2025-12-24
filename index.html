@@ -69,6 +69,12 @@
             padding: 40px;
             border-radius: 15px;
             box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+            height: 100%;
+            /* Đảm bảo các phần tử có cùng chiều cao */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            /* Đảm bảo nội dung bên trong được phân bổ đều */
         }
 
         .section h2 {
@@ -82,13 +88,15 @@
             line-height: 1.6;
             margin-bottom: 30px;
             color: #555;
+            flex-grow: 1;
             font-weight: bold;
+            /* Làm cho đoạn văn bản có thể mở rộng nếu cần thiết */
         }
 
         .section img {
             width: 100%;
-            height: 400px;
-            /* Ảnh lớn hơn */
+            height: 300px;
+            /* Giảm chiều cao ảnh để các phần tử có cùng chiều cao */
             object-fit: cover;
             border-radius: 15px;
         }
@@ -148,8 +156,9 @@
             <p>Main course (món chính) là phần quan trọng nhất, thịnh soạn nhất trong một bữa ăn nhiều món, thường được
                 phục vụ sau món khai vị (như súp, gỏi, salad) và trước món tráng miệng. Món chính cung cấp dinh dưỡng và
                 năng lượng chính, thường tập trung vào thịt, cá hoặc hải sản được chế biến đa dạng như nướng, xào, kho,
-                hấp. Món chính không chỉ mang đến sự phong phú về hương vị mà còn giúp thực khách cảm nhận được sự tinh
-                tế trong ẩm thực.  </p>
+                hấp. Tùy theo phong cách ẩm thực Món chính không chỉ mang đến sự phong phú về hương vị mà còn giúp thực
+                khách cảm nhận được sự tinh
+                tế trong ẩm thực. </p>
             <img src="https://ezcloud.vn/wp-content/uploads/2024/02/main-course-la-gi.webp" alt="Món chính">
         </div>
 
@@ -159,7 +168,8 @@
                 trọn vẹn, làm sạch vị giác, và thường bao gồm các loại bánh, kem, trái cây, sô cô la, chè, hoặc sữa
                 chua. Món tráng miệng không chỉ giúp làm dịu đi vị giác mà còn mang đến sự hài lòng cho thực khách, khép
                 lại bữa ăn trong một cảm giác ngon miệng và thoải mái.
-                Vị ngọt của món tráng miệng kích hoạt giải phóng endorphin trong não, tạo cảm giác hạnh phúc và thư giãn sau bữa ăn.
+                Vị ngọt của món tráng miệng kích hoạt giải phóng endorphin trong não, tạo cảm giác hạnh phúc và thư giãn
+                sau bữa ăn.
             </p>
             <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
                 alt="Món tráng miệng">
